@@ -15,11 +15,12 @@ public class ContaPJ extends Conta{
         this.imposto = imposto;
     }
 
+    //método especial da classe object
     public String toString(){
         return String.format("nome: %s | saldo: %d |imposto: %d", this.nome, this.saldo, this.imposto);
     }
 
-    //método especial da classe object
+    //método de polimorfismo
     @Override
     public void transferir(Conta destinatario, int valor){
         this.debitar(valor);
